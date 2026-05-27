@@ -1,0 +1,117 @@
+/* ── Layout ───────────────────────────────────────── */
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px 64px;
+}
+
+/* ── Step navigator ───────────────────────────────── */
+.step-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 2px solid #d1d5db;
+  margin-bottom: 36px;
+}
+
+.step-nav button {
+  padding: 10px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #2563eb;
+  border-radius: 8px;
+  background: #fff;
+  color: #2563eb;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.step-nav button:hover:not(:disabled) {
+  background: #2563eb;
+  color: #fff;
+}
+
+.step-nav button:disabled {
+  border-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.step-indicator {
+  font-size: 17px;
+  font-weight: 600;
+  color: #374151;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.step-indicator .step-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  margin-top: 3px;
+}
+
+/* ── Step card ────────────────────────────────────── */
+.step-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 36px 40px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.step-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 28px;
+}
+
+/* ── Controls / sliders ───────────────────────────── */
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.slider-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.slider-row label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #374151;
+  min-width: 130px;
+}
+
+.slider-row input[type='range'] {
+  flex: 1;
+  height: 6px;
+  cursor: pointer;
+  accent-color: #2563eb;
+}
+
+.slider-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: #2563eb;
+  min-width: 64px;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-family: ui-monospace, Consolas, monospace;
+}
+
+/* ── Chart color tokens ───────────────────────────── */
+:root {
+  --color-data: #374151;
+  --color-line: #2563eb;
+  --color-residual: #ef4444;
+  --color-cost: #7c3aed;
+  --color-grid: #e5e7eb;
+}
