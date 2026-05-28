@@ -3,10 +3,12 @@ import './App.css';
 import StepNavigator from './components/StepNavigator';
 import Step1HouseData from './components/Step1HouseData';
 import Step2PredictionLine from './components/Step2PredictionLine';
+import Step3PredictionErrors from './components/Step3PredictionErrors';
 
 const steps = [
   { title: 'We have data', Component: Step1HouseData },
   { title: 'We need a model', Component: Step2PredictionLine },
+  { title: 'The model is wrong', Component: Step3PredictionErrors },
 ];
 
 function App() {
