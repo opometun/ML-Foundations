@@ -112,6 +112,7 @@ function Step4MSECost() {
             tick={{ fontSize: 13 }}
           />
           <YAxis
+            dataKey="y"
             type="number"
             domain={Y_DOMAIN}
             label={{

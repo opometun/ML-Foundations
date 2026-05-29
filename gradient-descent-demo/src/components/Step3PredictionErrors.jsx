@@ -49,6 +49,7 @@ function Step3PredictionErrors() {
             tick={{ fontSize: 13 }}
           />
           <YAxis
+            dataKey="y"
             type="number"
             domain={Y_DOMAIN}
             label={{
