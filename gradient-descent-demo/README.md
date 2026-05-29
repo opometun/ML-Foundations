@@ -1,16 +1,32 @@
-# React + Vite
+# Gradient Descent: Interactive Teaching Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A 9-step interactive web app for teaching linear regression and gradient descent. Built for the Foundations of ML lecture — each step creates a problem that the next step solves.
 
-Currently, two official plugins are available:
+## Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+git clone git@github.com:opometun/ML-Foundations.git
+cd ML-Foundations/gradient-descent-demo
+npm install
+npm run dev
+```
 
-## React Compiler
+Open the URL printed in the terminal (usually `http://localhost:5173`).
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Steps
 
-## Expanding the ESLint configuration
+| # | Title | What it shows |
+|---|-------|---------------|
+| 1 | We have data | House price scatter plot |
+| 2 | We need a model | Draggable prediction line (θ₀, θ₁ sliders) |
+| 3 | The model is wrong | Residual lines between predictions and actuals |
+| 4 | We need a number for wrongness | MSE cost with squared-error visualization |
+| 5 | Find the bottom of this curve | Cost curve J(θ₁) — a parabola with a minimum |
+| 6 | Why not just guess? | Random guessing vs. the gradient arrow |
+| 7 | The gradient tells us how much to move | One gradient descent step, tangent line |
+| 8 | Training is repeated correction | Live animation — line converges toward best fit |
+| 9 | How do we know it's done? | Loss-vs-iteration curve flattening to a plateau |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Stack
+
+Vite · React 19 · Recharts 3 · plain CSS — no other dependencies.
