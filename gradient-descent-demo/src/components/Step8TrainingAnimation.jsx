@@ -105,7 +105,6 @@ function Step8TrainingAnimation() {
             tick={{ fontSize: 13 }}
           />
           <YAxis
-            dataKey="y"
             type="number"
             domain={Y_DOMAIN}
             label={{
@@ -118,7 +117,7 @@ function Step8TrainingAnimation() {
             tick={{ fontSize: 13 }}
           />
           <Tooltip />
-          <Scatter data={houseData} fill="#374151" r={6} isAnimationActive={false} />
+          <Scatter data={houseData} dataKey="y" fill="#374151" r={6} isAnimationActive={false} />
           {/* isAnimationActive=false prevents Recharts replaying the enter
               animation on every tick, which would cause visible flicker. */}
           <Line

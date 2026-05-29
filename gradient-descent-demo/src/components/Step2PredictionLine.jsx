@@ -49,7 +49,6 @@ function Step2PredictionLine() {
             tick={{ fontSize: 13 }}
           />
           <YAxis
-            dataKey="y"
             type="number"
             domain={Y_DOMAIN}
             label={{
@@ -62,7 +61,7 @@ function Step2PredictionLine() {
             tick={{ fontSize: 13 }}
           />
           <Tooltip />
-          <Scatter data={houseData} fill="#374151" r={6} />
+          <Scatter data={houseData} dataKey="y" fill="#374151" r={6} />
           <Line
             data={lineData}
             dataKey="y"

@@ -112,7 +112,6 @@ function Step4MSECost() {
             tick={{ fontSize: 13 }}
           />
           <YAxis
-            dataKey="y"
             type="number"
             domain={Y_DOMAIN}
             label={{
@@ -157,7 +156,7 @@ function Step4MSECost() {
           />
 
           {/* Data points last — always on top */}
-          <Scatter data={houseData} fill="#374151" r={6} />
+          <Scatter data={houseData} dataKey="y" fill="#374151" r={6} />
         </ComposedChart>
       </ResponsiveContainer>
 
