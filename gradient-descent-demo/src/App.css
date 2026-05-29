@@ -193,6 +193,24 @@
   margin-bottom: 4px;
 }
 
+.training-stats {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.diverged-warning {
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  color: #dc2626;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
 /* ── Chart color tokens ───────────────────────────── */
 :root {
   --color-data: #374151;
