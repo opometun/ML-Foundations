@@ -184,6 +184,15 @@
   margin: 6px 0 0;
 }
 
+.gradient-info {
+  font-size: 15px;
+  color: #374151;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 10px 16px;
+  margin-bottom: 4px;
+}
+
 /* ── Chart color tokens ───────────────────────────── */
 :root {
   --color-data: #374151;

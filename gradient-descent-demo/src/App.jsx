@@ -7,6 +7,7 @@ import Step3PredictionErrors from './components/Step3PredictionErrors';
 import Step4MSECost from './components/Step4MSECost';
 import Step5CostCurve from './components/Step5CostCurve';
 import Step6WhyNotGuess from './components/Step6WhyNotGuess';
+import Step7GradientMechanics from './components/Step7GradientMechanics';
 
 const steps = [
   { title: 'We have data', Component: Step1HouseData },
@@ -15,6 +16,7 @@ const steps = [
   { title: 'We need a number for wrongness', Component: Step4MSECost },
   { title: 'Find the bottom of this curve', Component: Step5CostCurve },
   { title: 'Why not just guess?', Component: Step6WhyNotGuess },
+  { title: 'The gradient tells us how much to move', Component: Step7GradientMechanics },
 ];
 
 function App() {
