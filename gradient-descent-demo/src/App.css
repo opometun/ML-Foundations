@@ -107,6 +107,26 @@
   font-family: ui-monospace, Consolas, monospace;
 }
 
+/* ── MSE display (Step 4) ─────────────────────────── */
+.mse-display {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #374151;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.mse-value {
+  color: #7c3aed;
+  font-size: 26px;
+  font-family: ui-monospace, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  margin-left: 4px;
+}
+
 /* ── Chart color tokens ───────────────────────────── */
 :root {
   --color-data: #374151;
