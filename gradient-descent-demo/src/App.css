@@ -127,6 +127,63 @@
   margin-left: 4px;
 }
 
+/* ── Buttons (Steps 6–9) ──────────────────────────── */
+.button-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.demo-btn {
+  padding: 10px 22px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 2px solid #2563eb;
+  background: #fff;
+  color: #2563eb;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.demo-btn:hover:not(:disabled) {
+  background: #2563eb;
+  color: #fff;
+}
+
+.demo-btn:disabled {
+  border-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+.demo-btn--secondary {
+  border-color: #6b7280;
+  color: #6b7280;
+}
+
+.demo-btn--secondary:hover:not(:disabled) {
+  background: #6b7280;
+  color: #fff;
+}
+
+.demo-btn--accent {
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
+.demo-btn--accent:hover:not(:disabled) {
+  background: #16a34a;
+  color: #fff;
+}
+
+.guess-count {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 6px 0 0;
+}
+
 /* ── Chart color tokens ───────────────────────────── */
 :root {
   --color-data: #374151;
