@@ -27,3 +27,13 @@ export const descentStep = (t0, t1, data, alpha) => {
 
 export const round = (n, places = 2) =>
   Math.round(n * 10 ** places) / 10 ** places;
+
+export const sampleCostCurve = (theta0, data, t1Range, samples = 100) => {
+  const [lo, hi] = t1Range;
+  const points = [];
+  for (let i = 0; i <= samples; i++) {
+    const t1 = lo + (i / samples) * (hi - lo);
+    points.push({ t1, J: mse(theta0, t1, data) });
+  }
+  return points;
+};

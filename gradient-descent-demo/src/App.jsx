@@ -5,12 +5,14 @@ import Step1HouseData from './components/Step1HouseData';
 import Step2PredictionLine from './components/Step2PredictionLine';
 import Step3PredictionErrors from './components/Step3PredictionErrors';
 import Step4MSECost from './components/Step4MSECost';
+import Step5CostCurve from './components/Step5CostCurve';
 
 const steps = [
   { title: 'We have data', Component: Step1HouseData },
   { title: 'We need a model', Component: Step2PredictionLine },
   { title: 'The model is wrong', Component: Step3PredictionErrors },
   { title: 'We need a number for wrongness', Component: Step4MSECost },
+  { title: 'Find the bottom of this curve', Component: Step5CostCurve },
 ];
 
 function App() {
